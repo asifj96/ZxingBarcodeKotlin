@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ZxingBarcodeKotlin" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.ZxingBarcodeKotlin">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+    </style>
+
+    <style name="TextViewStyle" parent="Theme.ZxingBarcodeKotlin">
+        <item name="fontFamily">@font/sofia_pro_regular</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textStyle">normal</item>
+        <item name="fontWeight">500</item>
+    </style>
+
+    <style name="textBold">
+        <item name="android:fontFamily">@font/sofia_pro_regular</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="dialog_animation_fade">
+        <item name="android:windowEnterAnimation">@anim/fade_in_dialog</item>
+        <item name="android:windowExitAnimation">@anim/fade_out_dialog</item>
+    </style>
+
+</resources>
